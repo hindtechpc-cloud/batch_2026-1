@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 5px 10px;
+  border-bottom: 1px solid gray;
+}
+
+.header .logo {
+  font-weight: 700;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header .logo .logo-first-char {
+  color: red;
+  font-weight: 900;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.logo-last-nema {
+  color: deepskyblue;
+}
+.menu-item-list {
+  /* background-color: gray; */
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.menu-item {
+  /* background: red; */
+  border: 1px solid white;
+  padding: 5px 15px;
+}
+.menu-item:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-btn {
+  display: flex;
+  gap: 7px;
+}
+.action-btn button {
+  color: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.action-btn button:nth-child(1) {
+  border: 1px solid black;
+  background: #000;
+}
+.action-btn button:nth-child(2) {
+  border: 1px solid black;
+  background: #e75151;
+}
+
+
+
+
+/* Small devices (≥576px) */
+@media (min-width: 250px) {
+  .header {
+    padding: 10px 15px;
+    gap: 8px;
+
+    flex-direction: column;
+  }
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .header {
+    padding: 10px 15px;
+    gap: 8px;
+    text-align: left;
+    flex-direction: column;
+  }
+}
+/* Tablets (≥768px) */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding: 12px 20px;
+    text-align: left;
+  }
+}
+
+/* Laptops (≥992px) */
+@media (min-width: 992px) {
+  .header {
+    padding: 14px 30px;
+  }
+}
+
+/* Large desktops (≥1200px) */
