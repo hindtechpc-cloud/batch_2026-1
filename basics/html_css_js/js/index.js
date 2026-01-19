@@ -370,4 +370,141 @@ const users = [
 // const total=arr.reduce((a,b)=>a+b);
 // console.log(total);
 
+// const newArr=arr.splice(2,13);
+// console.log(newArr)
+// console.log(arr);
 
+// const newINdex=arr.indexOf(4);
+// const newINdex = arr.find((e) => e % 2 == 0 && e != 4 && e != 44);
+// console.log(newINdex);
+
+// const user = users.find(
+//   (user) =>
+//     user.name[0].toLocaleLowerCase() == "a" &&
+//     user.age > 18 &&
+//     user.age < 100 &&
+//     user.salary > 10000
+// );
+
+// console.log(user);
+
+// arr.some()
+// arr.every()
+// keys()
+
+// console.log(users.reverse());
+
+// function
+
+// function searchUser(users, age, salary, role) {
+//   return users.find(
+//     (user) => user.age > age && user.salary > salary && user.role == role,
+//   );
+// }
+
+// console.log(searchUser(users, 30, 100000, "laravel dev"));
+
+// const filterEvenNumbers = (arr = []) => {
+//   const even = arr.filter((e) => e % 2 == 0);
+//   return even;
+// };
+
+// console.log(filterEvenNumbers(arr));
+
+// (() => {
+// console.log(filterEvenNumbers(arr));
+// })();
+
+// const performOperation = (num1, num2, sym) => {
+
+//   let result;
+//   if (sym == "+") result = num1 + num2;
+//   if (sym == "-") result = num1 - num2;
+//   if (sym == "*") result = num1 * num2;
+//   if (sym == "%") result = num1 % num2;
+//   if (sym == "/") result = num1 / num2;
+//   return result;
+// };
+
+// console.log(performOperation(1, 2, "-"));
+
+// conditional statements
+// if block
+// if (condition) {
+
+// }
+
+// if else block
+// if (condition) {
+// } else {
+// }
+
+// switch block
+// switch (key) {
+//   case value:
+//     break;
+
+//   default:
+//     break;
+// }
+
+// loops
+// for
+// while
+// do while
+
+// for in most importent in objects
+// const user = {
+//   name: "rufyrty",
+//   age: 786,
+// };
+
+// console.log(user["name"]);
+// console.log(user.name);
+// for (const key in user) {
+//   console.log(user[key]);
+// }
+
+// for of
+
+// for(value of user){ ///not used for objects
+//   console.log(value);
+// }
+
+// for (value of arr) {
+//   console.log(value);
+// }
+
+// foreach
+
+// users.forEach((user) => {
+//   if (user.age > 18 && user.salary > 1000) {
+//     console.log(user);
+//   }
+// });
+
+// date and time
+
+const date = new Date();
+// console.log(date.toLocaleDateString());
+// console.log(date.toLocaleTimeString());
+// console.log(date.toISOString());
+
+// console.log(date.toLocaleString().split(",")[0]);
+// console.log(date.toLocaleString().split(",")[1]);
+
+// [jan,feb]
+
+// const days = ["sun","mon", "tue", "wed", "thur", "fri", "sat"];
+// date 
+// const year = date.getFullYear();
+// const month = date.getMonth();
+
+// // console.log(month);
+// const currentDate = date.getDate();
+// console.log(currentDate + "/" + month + 1 + "/" + year);
+// const day = date.getDay();
+// console.log(day);
+
+
+const 
