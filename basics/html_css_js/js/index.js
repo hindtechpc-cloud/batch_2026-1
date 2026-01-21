@@ -485,7 +485,7 @@ const users = [
 
 // date and time
 
-const date = new Date();
+// const date = new Date();
 // console.log(date.toLocaleDateString());
 // console.log(date.toLocaleTimeString());
 // console.log(date.toISOString());
@@ -496,7 +496,7 @@ const date = new Date();
 // [jan,feb]
 
 // const days = ["sun","mon", "tue", "wed", "thur", "fri", "sat"];
-// date 
+// date
 // const year = date.getFullYear();
 // const month = date.getMonth();
 
@@ -506,5 +506,50 @@ const date = new Date();
 // const day = date.getDay();
 // console.log(day);
 
+//  time
 
-const 
+const date = new Date("2026-01-20T02:30:00.000Z");
+
+// console.log(date.toLocaleString())
+const formatedTime = date.toLocaleTimeString();
+// console.log(formatedTime);
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
+const melSec = date.getMilliseconds();
+import { create } from "domain";
+// console.log(`${hours}:${minutes}:${seconds} ${hours >= 12 ? "pm" : "am"}`);
+
+// file handling
+
+// import fs from "fs";
+import { createFile } from "./createFile";
+
+// show users data for content.
+const showAllUsers = (user) =>
+  `\nName : ${user.name} \t Email : ${user.salary} \t Role : ${user.role}`;
+///crea file in here
+
+
+users.push({
+  name: "New user",
+  salary: 3777,
+  role: "new role",
+  age: 34,
+});
+
+// content formating for file conetent
+// const content = `this is test file .txt. This file created at ${formatedTime}, ${date.toDateString()} ${users.map(
+//   (user) => showAllUsers(user),
+// )} `;
+// createFile("file.txt", content);
+
+// multiple files at one time 
+// const formateContent=(user)=>`Hello ${user.name}, Your age is : ${user.age}, salary : ${user.salary} and you are a ${user.role} `
+
+users.forEach((user) => createFile(`${user.name}.txt`,formateContent(user)));
+
+
+// fs.unlinkSync("Arvind.txt");
+
+
