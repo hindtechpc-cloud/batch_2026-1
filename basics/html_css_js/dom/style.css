@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+div {
+  background: rgb(21, 21, 21);
+  color: red;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  color: green;
+}
