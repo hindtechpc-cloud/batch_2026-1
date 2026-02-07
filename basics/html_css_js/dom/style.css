@@ -2,15 +2,35 @@ body {
   margin: 0;
   padding: 0;
 }
-div {
-  background: rgb(21, 21, 21);
-  color: red;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .image {
   color: green;
+}
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 15% auto;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .print-card,
+  .print-card * {
+    visibility: visible;
+  }
+  .visible {
+    display: none;
+  }
+
+  .print-card {
+    position: absolute;
+    left: -6%;
+    top: -30%;
+    width: 100%;
+  }
 }
