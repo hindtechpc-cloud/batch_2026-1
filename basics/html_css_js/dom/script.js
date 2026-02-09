@@ -2,6 +2,7 @@ const handleDownloadClick = (e, userCardContainer) => {
   userCardContainer.setAttribute("class", "print-card ");
   window.print(userCardContainer);
 };
+
 let cards = 0;
 const MAX = 1;
 
